@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Verdade</title>
+    <h1>Tabela Verdade</h1>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin-right: 300px;
+        }
+        nav[name="Sumário"]{
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 80%;
+            background-color: #d0d0d0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        table{
+            border: 2px solid #000;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            justify-self: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav name="Sumário">
+        <h3>Sumário</h3>
+        <ol>
+        <li><a href="#OQueSão">O que são?</a></li>
+        <li><a href="#Proposições">Proposições</a></li>
+        <li><a href="#Princípios">Princípios da lógica booleana</a>
+        <li><a href="#Classificação">Classificação das proposições</a></li>
+        <li><a href="#Conectivos">Conectivos lógicos</a></li>
+        <li><a href="#ComoFazer">Como fazer uma tabela verdade</a></li>
+        <li><a href="../../index.html">Página Inicial</a></li>
+        </ol>
+    </nav>
+    <h2 id="OQueSão">O que são?</h2>
+    <p> A tabela verdade é uma representação de todos os valores possíveis de uma proposição Booleana, ou seja
+    ela nos permite observar e entender todos os resultados antes mesmo de aplicar a proposição de uma forma 
+    prática
+    </p>
+    <h3 id="Proposições">O que é uma proposição?</h3>
+    <p>Uma proposição é uma contrução(pode ser uma sentença, frase ou pensamento) à qual é possivel atribuir
+    um juizo. <br>
+    Em resumo, trata-se do ato ou efeito de propor algo. <br>Exemplo: <br>
+    <ul name="ExemplosProposição">
+        <li>Os peixes vivem no mar</li>
+        <li>A capital do Brasil é Brasília</li>
+        <li>O céu é verde</li>
+    </ul>
+    </p>
+    <h3 id="Princípios">Princípios da lógica Booleana</h3>
+    <ul>
+        <li>Princípio da não contradição:<p>Uma proposição não pode ser paradoxal</p></li>
+        <li>Pincípio do terceiro excluído:<p>Toda proposição pode apresentar apenas dois valores
+        VERDADEIRO ou FALSO, nunca um terceiro.
+        </p></li>
+    </ul>
+    <h3 id="Classificação">Classificação das proposições</h3>
+    <ul>
+        <li>Proposições atômicas
+            <ul>
+                <li>Não contém nenhuma outra proposição</li>
+                <li>Podem ser verdadeiras ou falsas</li>
+                <li>Começando pela letra p são representadas por letras minúsculas</li>
+                <li>Ex:A Lua é um satélite natural da terra</li>
+            </ul>
+        </li>
+        <li>Proposições moleculares
+            <ul>
+                <li>Formadas pela junção de duas ou mais proposições</li>
+                <li>Conectadas por conectivos lógicos(e,ou,não,etc)</li>
+                <li>Representadas por letras maiúsculas</li>
+                <li>Ex:O mar é azul e os lagos também</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="Conectivos">Conectivos lógicos</h3>
+    <p>São simbolos ou palavras que ligam proposições simples para formar proposições compostas <br>Ex: e,ou,
+    não,se-então,se-somente-se. <br>Vou comprar um PC <strong>OU</strong> um notebook.</p>
+    <table border="1" name="Conectivos">
+        <thead>
+            <tr>
+                <th>Símbolo</th>
+                <th>Partícula</th>
+                <th>Nome</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>~ ou ¬</td>
+                <td>Não</td>
+                <td>Negação</td>
+                <td>~p</td>
+            </tr>
+            <tr>
+                <td>∧</td>
+                <td>E</td>
+                <td>Conjunção</td>
+                <td>p∧q</td>
+            </tr>
+            <tr>
+                <td>∨</td>
+                <td>OU</td>
+                <td>Disjunção</td>
+                <td>p∨q</td>
+            </tr>
+            <tr>
+                <td>⊕ OU ⊻</td>
+                <td>OU exclusivo</td>
+                <td>Disjunção exclusiva</td>
+                <td>p⊻q</td>
+            </tr>
+            <tr>
+                <td>→</td>
+                <td>Se-então</td>
+                <td>Condicional</td>
+                <td>p→q</td>
+            </tr>
+            <tr>
+                <td>↔</td>
+                <td>Se-somente-se</td>
+                <td>Bicondicional</td>
+                <td>p↔q</td>
+            </tr>
+    </table>
+    <h3 id="ComoFazer">Como fazer uma tabela verdade</h3>
+    <p>Para fazer uma tabela verdade é preciso saber a quantidade de proposições atomicas e elevar esse
+    numero por dois assim teremos a quantidade de linhas na nossa tabela verdade<br>Exemplo:
+    </p>
+    <table border="1" name="TabelaExemplo">
+        <tr>
+            <th colspan="3">p∨q</th>
+        </tr>
+        <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>p∨q</th>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <p>Essa tabela é pequena, tendo apenasduas proposições atômicas e apenas um conectivo, observe a 
+    disposição dos elementos V e F na tabela, observe que a preposição q, que está à direita troca
+    esses elementos a cada nova linha e o elemento que p que está à esquerda faz isso a cada duas linhas
+    isso serve para que seja mais fácil de fazer a tabela, já que dessa forma todas as possíveis combinações
+    seram obtidas. <br>E isso acontece quanto mais proposições tiverem, no caso de existir uma terceira
+    ela trocaria entre Vs e Fs a cada 4, a quarta proposição trocaria a cada 8 linhas, a quinta 16 assim por
+    diante.
+    </p>
+    <p>A segunda regra para se fazer uma tabela verdade e olhar a quantidade de conectivos presentes, no caso
+    de ser uma proposição molecular, para demonstrar usaremos a seguinte proposição: <br>¬(p∨q)∧¬r</p>
+    <p>Primeiro pegamos o número de proposições atômicas(p,q,r) e elevamos a 2, assim obtemos 2³=8 ou seja 8 linhas</p>
+    <table border="1" name="8linhasp1">
+        <tr>
+            <th colspan="3">¬(p∨q)∧¬r</th>
+        </tr>
+        <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>r</th>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <p>Após isso começamos a colocar as proposições e seus conectivos juntos,sempre seguindo a ordem de importancia
+    (¬,∧,∨,⊕,→,↔)
+    </p>
+    <div name="TabelasVerdadeExemplos">
+    <table border="1" name="8linhasp2">
+        <tr>
+            <th colspan="4">¬(p∨q)∧¬r</th>
+        </tr>
+        <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>r</th>
+            <th>¬r</th>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+    </table>
+        <table border="1" name="8linhasp3">
+        <tr>
+            <th colspan="5">¬(p∨q)∧¬r</th>
+        </tr>
+        <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>r</th>
+            <th>¬r</th>
+            <th>p∨q</th>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <table border="1" name="8linhasp4">
+        <tr>
+            <th colspan="6">¬(p∨q)∧¬r</th>
+        </tr>
+        <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>r</th>
+            <th>¬r</th>
+            <th>p∨q</th>
+            <th>¬p∨q</th>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+        </tr>
+    </table>
+    <table border="1" name="8linhasp5">
+        <tr>
+            <th colspan="7">¬(p∨q)∧¬r</th>
+        </tr>
+        <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>r</th>
+            <th>¬r</th>
+            <th>p∨q</th>
+            <th>¬p∨q</th>
+            <th>¬(p∨q)∧¬r</th>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+            <td>V</td>
+            <td>F</td>
+            <td>V</td>
+            <td>V</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

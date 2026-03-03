@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        div[name="formulario"]{
+            display: flex;
+            margin: auto;
+            width: 70%;
+            text-align: center;
+            border: black 1px solid;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <h1 style="text-align: center;">Teste</h1>
+    <h3><a href="../../index.html"><-Voltar</a></h3>
+    <p>Este pequeno teste serve para verificar se você conseguiu aprender os conceitos ensinados, tanto na pagina
+    de portas lógicas quanto na pagina da tabela verdade. <br>Ele consiste em 10 perguntas, anote as suas respostas e depois confira no bagarito quantas você acertou. 
+    Boa sorte!
+    </p>
+    <div name="formulario">
+    <form>
+        <label for="Pergunta1">Pergunta 1: <p>Quais são as portas lógicas universais?</p></label>
+            <input type="radio" name="Pergunta1" value="1">A) AND e OR<br>
+            <input type="radio" name="Pergunta1" value="2">B) NAND e NOR<br>
+            <input type="radio" name="Pergunta1" value="3">C) AND e NOR<br>
+            <input type="radio" name="Pergunta1" value="4">D) NAND e OR<br>
+        <label for="Pergunta2">Pergunta 2: <p>O que são proposições?</p></label>
+        <textarea name="Pergunta2" id="Pergunta2" placeholder="Digite sua resposta aqui"></textarea> <br> <br>
+        <label for="Pergunta3">Pergunta 3: <p>Qual a diferença entre proposições atômicas e moleculares?</p></label> 
+        <textarea name="Pergunta3" id="Pergunta3" placeholder="Digite sua resposta aqui"></textarea> <br>
+        <label for="Pergunta4">Pergunta 4: <p>Indentifique o comportamento da porta lógica XNOR</p></label>
+            <input type="radio" name="Pergunta4" value="1">A) Passa um sinal positivo apenas quando as entradas são diferentes <br>
+            <input type="radio" name="Pergunta4" value="2">B) Passa um sinal positivo apenas quando as entradas são iguais <br>
+            <input type="radio" name="Pergunta4" value="3">C) Passa um sinal positivo quando qualquer uma das entradas é verdadeira <br>
+            <input type="radio" name="Pergunta4" value="4">D) Passa um sinal negativo quando as entradas são positivas <br>
+        <label for="Pergunta5">Pergunta 5: <p>Qual lei é usada para transformar um disjunção em uma conjunção e vice versa?</p></label>
+            <input type="radio" name="Pergunta5" value="1">A) Lei da Universalidade <br>
+            <input type="radio" name="Pergunta5" value="2">B) Lei de Mendel <br>
+            <input type="radio" name="Pergunta5" value="3">C) Lei de Morgan <br>
+            <input type="radio" name="Pergunta5" value="4">D) Lei da base empírica <br>
+        <label for="Pergunta6">Pergunta 6: <p>Qual a saída da expressão S=(A⊕B)⊕C. Se A=1 B=1 e C=1</p></label>
+            <input type="radio" name="Pergunta6" value="1">A) 1 <br>
+            <input type="radio" name="Pergunta6" value="2">B) 0 <br>
+        <label for="Pergunta7">Pergunta 7: <p>Qual o significado do símbolo ¬?</p></label>
+            <input type="radio" name="Pergunta7" value="1">A) Não b <br>
+            <input type="radio" name="Pergunta7" value="2">B) Se-Então <br>
+            <input type="radio" name="Pergunta7" value="3">C) OU <br>
+            <input type="radio" name="Pergunta7" value="4">D) E <br>
+        <label for="Pergunta8">Pergunta 8: <p>Utilizandoa a Lei de Morgan como a expressão <span style="text-decoration: overline;">A+B</span> deveria ser transformada?</p></label>
+            <input type="radio" name="Pergunta8" value="1">A) <span style="text-decoration: overline;">A.B</span> <br>
+            <input type="radio" name="Pergunta8" value="2">B) <span style="text-decoration: overline;">A</span>+<span style="text-decoration: overline;">B</span> <br>
+            <input type="radio" name="Pergunta8" value="3">C) <span style="text-decoration: overline;">A.B</span> <br>
+            <input type="radio" name="Pergunta8" value="4">D) <span style="text-decoration: overline;">A.B</span> <br>
+        <label for="Pergunta9">Pergunta 9: <p>Para um carro funcionar é necessario que a chave esteja na ignição e tenha combustivel o suficiente, qual porta lógica
+        seria indicada para fazer a verificação correta dessas duas variaveis?
+        </p></label>
+            <input type="radio" name="Pergunta9" value="1">A) OR <br>
+            <input type="radio" name="Pergunta9" value="2">B) AND <br>
+            <input type="radio" name="Pergunta9" value="3">C) XOR <br>
+            <input type="radio" name="Pergunta9" value="4">D) NOR <br>
+        <label for="Pergunta10">Pergunta 10: <p>Considere as proposições atômicas p e q. A proposição
+        molecular definida por (p∧q)→(p∨q) resulta em qual tipo de tabela verdade?
+        </p></label>
+            <input type="radio" name="Pergunta10" value="1">A) Contradição <br>
+            <input type="radio" name="Pergunta10" value="2">B) Tautologia <br>
+            <input type="radio" name="Pergunta10" value="3">C) Contingência <br>
+            <input type="radio" name="Pergunta10" value="4">D) Impossivel dizer <br> <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+    
+</body>
+</html>

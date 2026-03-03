@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portas Lógicas</title>
+    <h1>Pórtas Lógicas</h1>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin-right: 300px;
+        }
+        nav[name="Sumário"]{
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 80%;
+            background-color: #d0d0d0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        div[name=PortaAND], div[name=PortaOR], div[name=PortaNOT], div[name=PortaNAND], div[name=PortaNOR], div[name=PortaXOR], div[name=PortaXNOR]{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20%;
+            border: black solid 1px;
+        }
+        table[name=TabelaVerdade]{
+            border: black solid 1px;
+            border-collapse: collapse;
+            th, td{
+                border: black solid 1px;
+                padding: 5px;
+            }
+
+        }
+        div[name=PortaXNORComNAND]{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav name="Sumário">
+        <ol>
+            <h3>Sumário</h3>
+            <li><a href="#Introdução">Introdução</a></li>
+            <li><a href="#História">História</a></li>
+            <li><a href="#Tipos">Tipos</a>
+                <ol>
+                <li><a href="#PortaAND">AND</a></li>
+                <li><a href="#PortaOR">OR</a></li>
+                <li><a href="#PortaNOT">NOT</a></li>
+                <li><a href="#PortaNAND">NAND</a></li>
+                <li><a href="#PortaNOR">NOR</a></li>
+                <li><a href="#PortaXOR">XOR</a></li>
+                <li><a href="#PortaXNOR">XNOR</a></li>
+                </ol>
+            </li>
+            <li><a href="#PortasUniversais">Portas Universais</a></li>
+            <li><a href="../../index.html">Página Inicial</a></li>
+        </ol>
+    </nav>
+<div name="TudoSobrePortasLogicas">
+    <h1 id="Introdução">Introdução</h1>
+    <p>Portas ou circuitos lógicos são dispositivos que operam e trabalham com um ou mais sinais lógicos de entrada para produzir uma e somente
+    uma saída, dependente da função implementada no circuito. São geralmente usadas em circuitos eletrônicos, por causa das situações que os 
+    sinais deste tipo de circuito podem apresentar: presença de sinal, ou "1"; e ausência de sinal, ou "0". As situações "Verdade" e "Falso" são
+    estudadas na Lógica Matemática ou Lógica de Boole; origem do nome destas portas. O comportamento das portas lógicas é conhecido pela tabela 
+    verdade que apresenta os estados lógicos das entradas e das saídas.
+    </p>
+    <h1 id="História">História</h1>
+    <p>Em 1854, o matemático britânico George Boole(1815 - 1864)(link), através da obra intitulada (An Investigation of the Laws of Thought 
+    italico) (Uma Investigação Sobre as Leis do Pensamento), apresentou um sistema matemático de análise lógica conhecido como álgebra de Boole.
+    No início da era da eletrônica, todos os problemas eram resolvidos por sistemas analógicos, isto é, sistemas lineares.
+    Apenas em 1938, o engenheiro americano Claude Shannon utilizou as teorias da álgebra de Boole para a solução de problemas de circuitos de 
+    telefonia com relés, tendo publicado um trabalho denominado ''Symbolic Analysis of Relay and Switching Circuits,[1] praticamente 
+    introduzindo na área tecnológica o campo da eletrônica digital.
+    Esse ramo da eletrônica emprega em seus sistemas um pequeno grupo de circuitos básicos padronizados conhecidos como Portas Lógicas.
+    </p>
+    <h1 id="Tipos">Tipos</h1>
+    <h2 id="PortaAND">Porta AND</h2>
+    <p>As portas lógicas AND(E) produzem uma saída "1" como o nome diz quando uma entrada <strong>E</strong> a outra forem "1". Caso contrário,
+     a saída será "0". <br>
+    Exemplo:</p>
+    <div name="PortaAND">
+        <img src="../Imagens/PortaAND.png" alt="Porta AND">
+        <table name="TabelaVerdade">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>Saída</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        </table>
+    </div>
+    <h2 id="PortaOR">Porta OR</h2>
+    <p>Ao contrário da porta AND,a porta OR(OU) produz uma saída "1" quando uma OU outra entrada for "1". Caso contrário, a saída será "0". <br>
+    Exemplo:</p>
+    <div name="PortaOR">
+        <img src="../Imagens/PortaOR.png" alt="Porta OR">
+        <table name="TabelaVerdade">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        </table>
+    </div>
+    <h2 id="PortaNOT">Porta NOT</h2>
+    <p>As portas lógicas NOT são usadas para negar o estado de uma entrada. "1" vira "0" e "0" vira "1".</p>
+    <div name="PortaNOT">
+        <img src="../Imagens/PortaNOT.png" alt="Porta NOT">
+        <table name="TabelaVerdade">
+        <tr>
+            <th>A</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        </table>
+    </div>
+    <h2 id="PortaNAND">Porta NAND</h2>
+    <p>As portas que contem um "N" na frente indicam uma negação, ou seja elas são as portas normais mas com a saída invertida. <br>
+    Além disso a porta NAND é conhecida como uma das duas portas universais, que serão explicadas mais à frente.</p>
+    <div name="PortaNAND">
+        <img src="../Imagens/PortaNAND.png" alt="Porta NAND">
+        <table name="TabelaVerdade">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        </table>
+    </div>
+    <h2 id="PortaNOR">Porta NOR</h2>
+    <p>A porta NOR é a negação da porta OR, sendo considerada a segunda das duas portas universais, assim como a porta NAND ela funciona fazendo
+    a comparação da porta OR normalmente e depois invertendo-a.<br>
+    Exemplo:</p>
+    <div name="PortaNOR">
+        <img src="../Imagens/PortaNOR.png" alt="Porta NOR">
+        <table name="TabelaVerdade">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        </table>
+    </div>
+    <h2 id="PortaXOR">Porta XOR</h2>
+    <p>As portas lógicas XOR produzem uma saída "1" somente quando as entradas são diferentes. Caso contrário, a saída será "0". <br>
+    Exemplo:</p>
+    <div name="PortaXOR">
+        <img src="../Imagens/PortaXOR.png" alt="Porta XOR">
+        <table name="TabelaVerdade">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        </table>
+    </div>
+    <h2 id="PortaXNOR">Porta XNOR</h2>
+    <p>As portas lógicas XNOR produzem uma saída "1" somente quando as entradas são iguais em uma situação na qual as entradas sejam iguais
+    a saída sera "0", justamente o contrário da porta XOR. <br>
+    Exemplo:</p>
+    <div name="PortaXNOR">
+        <img src="../Imagens/PortaXNOR.png" alt="Porta XNOR">
+        <table name="TabelaVerdade">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        </table>
+    </div>
+    <div name="PortasUniversais">
+        <h2 id="PortasUniversais">Portas Universais</h2>
+        <p>As portas universais (NAND) e (NOR) são portas lógicas que se forem combinadas da maneira correta podem reproduzir o comportamento
+        de qualquer outra porta lógica existente. <br>
+        Por que isso acontece?<br>
+        Primeiro precisamos saber o que é a "Lei de Morgan": <br>
+        A Lei de morgan é um teorema de algebre Booleana que define regras utilizadas para a conversão de eperações lógicas E em OU e vice-versa. <br> 
+        Ela é composta por duas regras:
+        <ul>
+            <li>A negação de uma conjunção é igual à disjunção das negações: ¬(A . B) = ¬A + ¬B</li>
+            <li>A negação de uma disjunção é igual à conjunção das negações: ¬(A + B) = ¬A . ¬B</li>
+        </ul>
+        Com essas duas regras ja podemos transformar qualquer porta em uma porta NAND ou NOR, por exemplo: <br>
+        <div name="PortaXNORComNAND">
+            <img src="../Imagens/PortaXNORComNAND.png" height="300" alt="Porta XNOR com NAND">
+            <table name="TabelaVerdade" height="300px">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>Saída</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+            </table>
+        </div>
+        Observe que ambas apresentam a mesma tabela verdade, ou seja, o mesmo comportamento, provando a universalidade da porta AND.    
+        </p>
+    </div>
+</div>
+</body>
+</html>
+<!--Feito-->
