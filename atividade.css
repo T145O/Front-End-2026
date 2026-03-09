@@ -1,0 +1,104 @@
+body{
+    font-family: Arial;
+    place-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    background-color: #e0e0e0;
+    
+}
+/*Coisa pra fazer os link aumentar de tamanho->*/
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease-in;
+}
+.menu ul li a:hover {
+    transform: scale(1.2);
+    color: #007bff;        
+}
+summary{
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+    transform-origin: left;
+    width: fit-content;
+}
+summary:hover{
+    transform: scale(1.2);
+}
+/*<-Coisa pra fazer is link aumentar de tamanho*/
+
+/*Também foram adicionados <hr>s no código html para dividir a página mais claramente entre suas
+subcategorias*/
+
+/*Fazer a borda das tabelas ficarem finas*/
+table{
+    border-collapse: collapse;   
+}
+
+/*Personalização das linhas horizontais adicionadas no código*/
+hr{
+    border-color: black;
+    color: black;
+    height: 2px;
+    background-color: black;
+}
+
+/*Pedi ajuda pra ia pra fazer mas depois fiz do meu jeito
+Linha do tempo alterada para ficar mais bonita*/
+.timelineContainer{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  border-bottom: 2px solid blue; 
+}
+.timeline li{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.timeline li::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -7px;
+}
+.timeline li span{
+  writing-mode: vertical-rl; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+}
+/*Link Adicionado que abre uma nova guia para o site https://www.symbolics.com*/
+
+/*Title adicionado para o valor de 8.000 Bitcois*/
+/*Curiosidade sobre o bug do milenio adicionada no HTML*/
+/*Botões de Submit nos formulários alterado para permitir estilização*/
+.enviar{
+  background-color: limegreen;
+  color: black;
+  border: black solid 1px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: transform 0.3s ease-in;
+}
+.enviar:hover{
+ transform: scale(1.2);
+}
+
+
+
