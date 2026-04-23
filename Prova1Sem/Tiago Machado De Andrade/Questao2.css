@@ -1,0 +1,24 @@
+body {
+   background: #f0f0f0;
+   }
+   #container{
+   display: flex;
+   justify-content: space-around;
+   }
+   div {
+   box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
+   background-color: #f4f4f4;
+   border: black solid 1px;
+   border-radius: 15px;
+   padding: 30px;
+   margin-bottom: 50px;
+   }
+   .seiLa{
+   width: 25%;
+   }
+   details{
+   color: purple; 
+   }
+   header{
+   text-align: center;
+   }
