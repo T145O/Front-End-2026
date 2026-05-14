@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Bank</title>
+</head>
+<body>
+<div>
+    <div>
+        <label>Selecione a Bandeira:</label>
+        <select id="bandeira">
+            <option value="0.02">Visa (2%)</option>
+            <option value="0.0185">Mastercard (1.85%)</option>
+            <option value="0.03">Elo (3%)</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Valor da Venda (R$):</label>
+        <input type="number" id="valorVenda" placeholder="Ex: 1000.00" step="0.01">
+    </div>
+
+    <div>
+        <label>Número de Parcelas:</label>
+        <input type="number" id="parcelas" min="1" value="1">
+    </div>
+
+    <button onclick="calcularSimulacao()">Simular Venda</button>
+
+    <div id="resultado">
+        <div><span>Taxa da Bandeira:</span> <span id="resTaxa"></span></div>
+        <div><span>Juros Totais:</span> <span id="resJuros"></span></div>
+        <div><span>Taxas Fixas Mensais:</span> <span id="resTaxaMensal"></span></div>
+        <div><span>Valor da Parcela:</span> <span id="resParcela"></span></div>
+    </div>
+</div>
+</body>
+<script src="scriptBank.js"></script>
+</html>

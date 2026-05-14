@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Temperatura</title>
+</head>
+<body>
+    <div>
+        <div><h1>Conversor de temperatura</h1></div>
+        <div><h2>°C</h2><input step="0.1" type="number" id="celsius" oninput="converter('celsius', this.value)" placeholder="°C"></div>
+        <div><h2>°F</h2><input step="0.1" type="number" id="fahrenheit" oninput="converter('fahrenheit', this.value)" placeholder="°F"></div>
+        <div><h2>K</h2><input step="0.1" type="number" id="kelvin" oninput="converter('kelvin', this.value)" placeholder="K"></div>
+    </div>
+</body>
+<script src="scriptconversor.js"></script>
+</html>
